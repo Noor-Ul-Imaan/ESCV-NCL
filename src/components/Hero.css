@@ -1,0 +1,181 @@
+.bg-home {
+    height: 92vh;
+    
+    /* width: 100vw; */
+}
+
+.hero-container::after {
+    content:"";
+    position:absolute;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0)     60%);
+    z-index:2;
+    height:92vh;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.bg-img-text > p {
+    position: absolute;
+    top: 85%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 3vw;
+    font-weight: 500;
+    /* text-shadow : 1px 1px rgb(255, 255, 255); */
+    z-index: 3;
+
+}
+
+.sdgs {
+    /* margin-top: 10px;
+    margin-left: 100px; */
+    margin: auto;
+    width: 600px;
+    height: 240px;
+    z-index: 3;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.hero-main .col1 div, .hero-main .col2 div {
+    margin-bottom: 20px;
+}
+
+.col1 {
+    margin-left: 20px;
+    flex: 4;
+}
+
+.hero-main h1 {
+    font-weight:bold;
+    color: #061A2D;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.col1 p {
+    color: #061A2D;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    font-size: small;
+}
+
+.col2 {
+    flex:3;
+    margin-left: 50px;
+}
+
+.news-card p{
+    color:#061A2D;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.news-container {
+    margin-right: 20px;
+    border-top: solid 2px #747474;
+    border-left: solid 2px #747474;
+    padding-left: 12px;
+    font-size: small;
+}
+
+.news-headline {
+    font-weight: bold;
+}
+
+.view-more, .news-card {
+    margin: 15px;
+}
+
+
+
+.check-out p{
+    font-size: small;
+    font-weight: 500;
+    color:#061A2D;
+    display: inline-block;
+   margin-right: 10%;
+    /*  margin-top: 0px;
+    margin-bottom: 0px; */
+}
+
+a p:hover{
+    color: #5cabff;
+}
+
+a {
+    color:#061A2D;
+    text-decoration: none;
+}
+
+.about-us a{
+    display: inline-block;
+    width: 150px
+
+}
+.news-container a {
+    display: inline-block;
+
+}
+
+
+.news-container hr {
+    /* margin: 0px; */
+}
+
+@media screen and (max-width: 960px) {
+    .hero-main {
+        flex-direction: column;
+    }
+
+    .col2 {
+        margin-left: 22px;
+    }
+
+    .sdgs {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .bg-home {
+        height: 90vh;
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .bg-img-text > p {
+        font-size: 20px;
+        left: 45%;
+        right: 30px;
+        width: 80%;
+
+    }
+
+    .hero-main {
+        margin: auto;
+    }
+    .about-us p {
+        width: 95%;
+    }
+    
+    .check-out p{
+    
+        display: flex;
+        flex-direction: column;
+     }
+
+
+
+}

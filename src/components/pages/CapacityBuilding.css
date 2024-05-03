@@ -1,0 +1,71 @@
+.capacity-building {
+    color: #061A2D ;
+    margin-top: 2%;
+    width: 100%;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.capacity-building > h1 {
+    /* font-size: 23px;
+    display: inline-block; */
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* .capacity-building ul, .capacity-building ul li  {
+    display: inline-block;
+    color: black;
+} */
+.capacity-building ul li  {
+    display: inline-block;
+    color: black;
+}
+.capacity-building ul div {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.capacity-building .capacity-building-links {
+    margin-right: 6%;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+
+}
+
+.capacity-building ul li{
+    /* padding-left: 13px; */
+    margin-right: 25px;
+
+}
+
+/* .capacity-building-list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+} */
+
+@media screen and (max-width: 960px) {
+    .capacity-building {
+        flex-direction: column;
+    }
+    .capacity-building ul {
+        /* margin-right: 6%; */
+        margin: auto;
+    
+    }
+    .capacity-building ul li{
+        padding-left: 9px;
+        margin-right: 10px;
+    
+    }
+
+
+}
