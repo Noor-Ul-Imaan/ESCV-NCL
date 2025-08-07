@@ -6,17 +6,16 @@ export function useContentfulData(contentType) {
 
   useEffect(() => {
     const client = createClient({
-        space: "fg8c8ttvyh8y",
-        accessToken: "sQcdQjMZoB8rwKgxtF4XEIQcRIqZX3TurNC2FiOdFk8",
-      });
+      space: process.env.REACT_APP_CONTENTFUL_SPACE,
+      accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
+    });
 
     const fetchData = async () => {
       try {
         const response = await client.getEntries({
           content_type: contentType,
         });
-        console.log(response.items); 
-
+        console.log(response.items);
         setData(response.items);
       } catch (error) {
         console.error("Error fetching Contentful data:", error);
